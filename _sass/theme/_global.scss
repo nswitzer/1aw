@@ -1,0 +1,30 @@
+/**
+ * Global Theme Styles
+ */
+
+ body {
+ 	background: $bg-body;
+ }
+
+ // Site Title/Logo
+ .site-title {
+ 	font-family: $font-site-title;
+ 	font-size: 36px;
+ 	text-align: center;
+ }
+
+ a.site-title-text {
+ 	background: $bg-site-title;
+ 	color: $color-site-title;
+ 	padding: 15px 30px;
+ 	display: inline-block;
+ }
+
+ // Page Content
+
+ .page-content {
+
+ 	.wrapper {
+ 		background-color: $bg-page-content;
+ 	}
+ }
