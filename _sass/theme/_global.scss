@@ -2,29 +2,52 @@
  * Global Theme Styles
  */
 
- body {
- 	background: $bg-body;
- }
+body {
+	background: $bg-body;
+}
 
- // Site Title/Logo
- .site-title {
- 	font-family: $font-site-title;
- 	font-size: 36px;
- 	text-align: center;
- }
+// Site Title/Logo
+.site-title {
+	font-family: $font-site-title;
+	font-size: 36px;
+	text-align: center;
+}
 
- a.site-title-text {
- 	background: $bg-site-title;
- 	color: $color-site-title;
+a.site-title-text {
+	background: $bg-site-title;
+	color: $text-site-title;
  	padding: 15px 30px;
  	display: inline-block;
- }
+}
 
- // Page Content
+// Page Content
+.page-content {
+	margin: $spacing-unit*2 0 $spacing-unit 0;
 
- .page-content {
-
- 	.wrapper {
+	.wrapper {
  		background-color: $bg-page-content;
+ 		padding-top: $spacing-unit;
+ 		padding-bottom: $spacing-unit;
  	}
- }
+
+ 	ul, ol {
+    	margin-left: $spacing-unit;
+	}
+
+	li {
+    	> ul,
+    	> ol {
+        	margin-bottom: 0;
+    	}
+	}
+
+	h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, %vertical-rhythm {
+    	margin-bottom: $spacing-unit / 2;
+	}
+
+	p {
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

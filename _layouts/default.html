@@ -4,12 +4,12 @@
   {% include head.html %}
 
   <body {% if page.front == true %} class="front" {% endif %}>
-  <div id="preloader"></div>
+  <!-- <div id="preloader"></div> -->
   <div class="page-wrapper">
     {% include header.html %}
 
     <div class="page-content">
-      <div class="wrapper">
+      <div class="wrapper padded">
         {{ content }}
       </div>
     </div>

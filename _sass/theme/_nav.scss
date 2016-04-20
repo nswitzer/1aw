@@ -1,0 +1,35 @@
+/**
+ * Main Navigation Styles
+ */
+
+.site-nav {
+	margin: $spacing-unit 0;
+	@include clearfix;
+
+	ul {
+
+		li {
+			float: left;
+			list-style: none;
+			margin-right: $spacing-unit;
+		}
+	}
+
+	a {
+		color: $text-main-nav;
+
+		&:hover,
+		&:active {
+			text-decoration: none;
+			color: $text-main-nav-hover;
+		}
+	}
+}
+
+.nav-trigger {
+	height: $spacing-unit;
+
+	@include bp($large) {
+		display: none;
+	}
+}

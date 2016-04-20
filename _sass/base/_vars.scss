@@ -2,50 +2,87 @@
  * Variable Declarations
  */
 
+//
 // Color Palette
+//
+
 $gray-blue: #2c3e50;
 $red: #fc4349;
 $light-gray: #d7dadb;
 $light-blue: #6dbcdb;
 $white: #ffffff;
 
-// Element Color Definitions
+
+//
+// Global Elements
+//
+
+// Links
+$link-color: $light-blue;
+$link-color-hover: $light-gray;
+
+//
+// Component Color Definitions
+//
+
+// Global
 $bg-body: $gray-blue;
 
+// Preloader
 $bg-preloader: $white;
 
+// Title/Logo
 $bg-site-title: $red;
-$color-site-title: $white;
+$text-site-title: $white;
 
+// Main Content
 $bg-page-content: $white;
 
+
+//
 // Fonts
-$pacifico: 'Pacifico', cursive; // Available weights: 400
+//
+
+$pacifico: 'Pacifico',  cursive; // Available weights: 400
 $josefin: 'Josefin Slab', serif; // Available weights: 400, 700
+$arial: Arial, sans-serif;
 
 // Sitewide Font Definitions
-$base-font-family: $josefin;
+$base-font-family: $arial;
 $base-font-size: 16px;
 $base-font-weight: 400;
 $base-line-height: 1.5;
 
-$font-site-title: $pacifico;
+$font-site-title: $arial;
 
+// Sitewide Font Colors
+$text-color: $gray-blue;
+$text-main-nav: $white;
+$text-main-nav-hover: $red;
+
+
+//
+// Margins, Spacing and Dimensions
+//
+
+// General
+$spacing-unit: 30px;
+$content-width:    800px;
+
+// Breakpoints
+$small: 600px;
+$large: 800px;
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+//
 // Defaults from Jekyll base
+//
+
 $small-font-size:  $base-font-size * 0.875;
 
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
+// Keeping this stuff for now because it's used in blockquote and code styles
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
