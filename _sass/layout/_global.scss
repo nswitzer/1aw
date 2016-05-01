@@ -2,8 +2,16 @@
  * Global Layout Styles
  */
 
- // Wrapper
+// Page Content
+.page-content {
+    margin: $spacing-unit*2 $spacing-unit/2 $spacing-unit $spacing-unit/2;
+    
+    @include bp($large) {
+        margin: $spacing-unit*2 0 $spacing-unit 0;
+    }
+}
 
+ // Wrapper
 .wrapper {
 	max-width: $content-width;
 	margin-right: auto;
