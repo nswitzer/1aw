@@ -18,18 +18,19 @@
 
 // Way better MQ mixin
 @mixin bp($size, $default: false, $direction: 'min-width') {
-  @if ($direction == 'max-width') {
-    $size: $size - 1;
-  }
-
-  @media (#{$direction}: #{$size}) {
-    @content;
-  }
-  @if ($default) {
-    .no-mediaqueries & {
-      @content;
+    @if ($direction == 'max-width') {
+        $size: $size - 1;
     }
-  }
+
+    @media (#{$direction}: #{$size}) {
+        @content;
+    }
+
+    @if ($default) {
+        .no-mediaqueries & {
+            @content;
+        }
+    }
 }
 
 // Clearfix
@@ -40,4 +41,13 @@
         display: table;
         clear: both;
     }
+}
+
+// Simple Fade
+@mixin fade($length: '.25s') {
+  -o-transition:.25s;
+    ms-transition:.25s;
+    moz-transition:.25s;
+    webkit-transition:.25s;
+    transition:.25s;
 }

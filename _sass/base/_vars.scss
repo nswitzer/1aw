@@ -45,15 +45,19 @@ $bg-page-content: $white;
 
 $pacifico: 'Pacifico',  cursive; // Available weights: 400
 $josefin: 'Josefin Slab', serif; // Available weights: 400, 700
+$open-sans: 'Open Sans', sans-serif; // Available weights: 400, 700
 $arial: Arial, sans-serif;
 
 // Sitewide Font Definitions
-$base-font-family: $arial;
+$base-font-family: $open-sans;
 $base-font-size: 16px;
 $base-font-weight: 400;
 $base-line-height: 1.5;
 
-$font-site-title: $arial;
+// Element Font Definitions
+$font-site-title: $pacifico;
+
+$nav-font-size: 14px;
 
 // Sitewide Font Colors
 $text-color: $gray-blue;
