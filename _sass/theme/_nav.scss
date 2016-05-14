@@ -4,7 +4,6 @@
 
 .site-nav {
 	background-color: darken($gray-blue, 5%);
-	// margin: 0 0 $spacing-unit*2 0;
 	font-size: $nav-font-size;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -80,15 +79,7 @@
 	}
 
 	&:before {
-		font-family: $icomoon;
-		font-size: 16px;
-    	speak: none;
-    	font-style: normal;
-    	font-weight: normal;
-    	font-variant: normal;
-    	text-transform: none;
-	    -webkit-font-smoothing: antialiased;
-	    -moz-osx-font-smoothing: grayscale;
+		@include icofont;
 	    content: '\e901';
 	    margin-right: 5px;
 	}
@@ -97,26 +88,26 @@
 /*! responsive-nav.js 1.0.39 by @viljamis */
 
 .js .site-nav {
-  clip: rect(0 0 0 0);
-  max-height: 0;
-  position: absolute;
-  display: block;
-  overflow: hidden;
-  zoom: 1;
+	clip: rect(0 0 0 0);
+	max-height: 0;
+	position: absolute;
+	display: block;
+	overflow: hidden;
+	zoom: 1;
 }
 
 .site-nav.opened {
-  max-height: 9999px;
+	max-height: 9999px;
 }
 
 .nav-toggle {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 @include bp($small) {

@@ -5,7 +5,11 @@
 
 // Site Title
 .site-title {
-    margin: $spacing-unit*2 0;
+    margin: $spacing-unit 0;
+
+    @include bp($small) {
+        margin: $spacing-unit*2 0;        
+    }
 }
 
 // Page Content
@@ -33,4 +37,10 @@
 		    padding-left: $spacing-unit;
     	}
     }
+}
+
+// Footer
+.site-footer {
+    background-color: darken($gray-blue, 5%);
+    padding: $spacing-unit 0;
 }
