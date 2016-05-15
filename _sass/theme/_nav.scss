@@ -4,8 +4,9 @@
 
 .site-nav {
 	background-color: darken($gray-blue, 5%);
+	font-family: $nav-font-family;
 	font-size: $nav-font-size;
-	font-weight: 700;
+	font-weight: $nav-font-weight;
 	text-transform: uppercase;
 	@include clearfix;
 
@@ -43,7 +44,7 @@
 	}
 
 	a {
-		color: $text-main-nav;
+		color: $nav-font-color;
 		display: block;
 		line-height: 1;
 		padding: $spacing-unit/2;
@@ -58,7 +59,7 @@
 		&:hover,
 		&:active {
 			text-decoration: none;
-			color: $text-main-nav-hover;
+			color: $nav-font-color-hover;
 		}
 	}
 }
@@ -69,13 +70,14 @@
 	background-color: darken($gray-blue, 5%);
 	padding: $spacing-unit/2;
 	text-transform: uppercase;
+	font-family: $nav-font-family;
 	font-size: $nav-font-size;
-	font-weight: 700;
-	color: $text-main-nav;
+	font-weight: $nav-font-weight;
+	color: $nav-font-color;
 
 	&:hover,
 	&:active {
-		color: $text-main-nav-hover;
+		color: $nav-font-color-hover;
 	}
 
 	&:before {

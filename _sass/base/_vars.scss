@@ -3,7 +3,7 @@
  */
 
 //
-// Color Palette
+// Colors
 //
 
 $gray-blue: #2c3e50;
@@ -13,30 +13,15 @@ $light-blue: #6dbcdb;
 $white: #ffffff;
 
 
-//
-// Global Elements
-//
+// Sitewide Color Definitions
+$body-bg-color: $gray-blue;
 
-// Links
-$link-color: $light-blue;
-$link-color-hover: $light-gray;
+// Element Color Definitions
+$preloader-bg-color: $white;
 
-//
-// Component Color Definitions
-//
+$site-title-bg-color: $red;
 
-// Global
-$bg-body: $gray-blue;
-
-// Preloader
-$bg-preloader: $white;
-
-// Title/Logo
-$bg-site-title: $red;
-$text-site-title: $white;
-
-// Main Content
-$bg-page-content: $white;
+$page-content-bg-color: $white;
 
 
 //
@@ -45,39 +30,44 @@ $bg-page-content: $white;
 
 $pacifico: 'Pacifico',  cursive; // Available weights: 400
 $open-sans: 'Open Sans', sans-serif; // Available weights: 400, 700
+$merriweather: 'Merriweather', serif; // Available weights: 400, 700
 $icomoon: 'icomoon';
 $arial: Arial, sans-serif;
 
 // Sitewide Font Definitions
-$base-font-family: $open-sans;
+$base-font-family: $merriweather;
 $base-font-size: 16px;
 $base-font-weight: 400;
+$base-font-color: $gray-blue;
 $base-line-height: 1.5;
 
+$link-font-color: $light-blue;
+$link-font-color-hover: $light-gray;
+
 // Element Font Definitions
-$font-site-title: $pacifico;
+$site-title-font-family: $open-sans;
+$site-title-font-size: 36px;
+$site-title-font-weight: 700;
+$site-title-font-color: $white;
 
+$nav-font-family: $open-sans;
 $nav-font-size: 14px;
-
-// Sitewide Font Colors
-$text-color: $gray-blue;
-$text-main-nav: $white;
-$text-main-nav-hover: $red;
+$nav-font-weight: 700;
+$nav-font-color: $white;
+$nav-font-color-hover: $red;
 
 
 //
 // Margins, Spacing and Dimensions
 //
 
-// General
+// Sitewide Spacing Definitions
 $spacing-unit: 30px;
-$content-width:    800px;
+$content-width: 800px;
 
 // Breakpoints
 $small: 600px;
 $large: 800px;
-$on-palm:          600px;
-$on-laptop:        800px;
 
 
 //
