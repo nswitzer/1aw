@@ -1,6 +1,7 @@
-/**
- * Reset some basic elements
- */
+//
+// Basic Global Resets
+//
+
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
@@ -13,9 +14,10 @@ dl, dd, ol, ul, figure {
 }
 
 
-/**
- * Basic styling
- */
+//
+// Base Styling
+//
+
 body {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $base-font-color;
@@ -28,21 +30,20 @@ body {
 }
 
 
+//
+// Images
+//
 
-
-/**
- * Images
- */
 img {
     max-width: 100%;
     vertical-align: middle;
 }
 
 
+//
+// Figures
+//
 
-/**
- * Figures
- */
 figure > img {
     display: block;
 }
@@ -52,19 +53,45 @@ figcaption {
 }
 
 
+//
+// Headers
+//
 
-/**
- * Headings
- */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: $base-font-weight;
+    font-family: $header-font-family;
+    font-weight: $header-font-weight;
+    line-height: $header-line-height;
+}
+
+h1 {
+    font-size: $h1-font-size;
+}
+
+h2 {
+    font-size: $h2-font-size;
+}
+
+h3 {
+    font-size: $h3-font-size;
+}
+
+h4 {
+    font-size: $h4-font-size;
+}
+
+h5 {
+    font-size: $h5-font-size;
+}
+
+h6 {
+    font-size: $h6-font-size;
 }
 
 
+//
+// Links
+//
 
-/**
- * Links
- */
 a {
     color: $link-font-color;
     text-decoration: none;
@@ -77,10 +104,10 @@ a {
 }
 
 
+//
+// Blockquotes
+//
 
-/**
- * Blockquotes
- */
 blockquote {
     color: $grey-color;
     border-left: 4px solid $grey-color-light;
@@ -95,10 +122,10 @@ blockquote {
 }
 
 
+//
+// Code Formatting
+//
 
-/**
- * Code formatting
- */
 pre,
 code {
     font-size: 15px;
@@ -119,24 +146,5 @@ pre {
         border: 0;
         padding-right: 0;
         padding-left: 0;
-    }
-}
-
-
-
-/**
- * Icons
- */
-.icon {
-
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-
-        path {
-            fill: $grey-color;
-        }
     }
 }

@@ -6,7 +6,7 @@ body {
 	background: $body-bg-color;
 }
 
-// Site Title/Logo
+// Site Title
 .site-title {
 	font-family: $site-title-font-family;
 	font-size: $site-title-font-size;
@@ -26,30 +26,7 @@ a.site-title-text {
 
 	.wrapper {
  		background-color: $page-content-bg-color;
- 		padding-top: $spacing-unit;
- 		padding-bottom: $spacing-unit;
  	}
-
- 	ul, ol {
-    	margin-left: $spacing-unit;
-	}
-
-	li {
-    	> ul,
-    	> ol {
-        	margin-bottom: 0;
-    	}
-	}
-
-	h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, %vertical-rhythm {
-    	margin-bottom: $spacing-unit / 2;
-	}
-
-	p {
-		&:last-child {
-			margin-bottom: 0;
-		}
-	}
 }
 
 // Social Icons

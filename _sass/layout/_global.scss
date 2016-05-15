@@ -19,6 +19,34 @@
     @include bp($large) {
         margin: 0 0 $spacing-unit 0;
     }
+
+    .wrapper {
+        padding-top: $spacing-unit;
+        padding-bottom: $spacing-unit;
+    }
+
+    ul, ol {
+        margin-left: $spacing-unit;
+    }
+
+    li {
+        > ul,
+        > ol {
+            margin-bottom: 0;
+        }
+    }
+
+    h2, h3, h4, h5, h6, blockquote, pre, ul, ol, dl, figure, %vertical-rhythm {
+        margin-bottom: $spacing-unit / 2;
+    }
+
+    p {
+        margin-bottom: $spacing-unit;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }
 
  // Wrapper
