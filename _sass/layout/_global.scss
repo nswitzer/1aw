@@ -1,6 +1,6 @@
-/**
- * Global Layout Styles
- */
+//
+// Global Layout Styles
+//
 
 
 // Site Title
@@ -15,6 +15,11 @@
 // Page Title
 h1.page-title {
     margin-bottom: $spacing-unit;
+}
+
+// Cover Photos
+.cover-photo {
+    margin: 0 $spacing-unit/2;
 }
 
 // Page Content
