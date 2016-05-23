@@ -3,6 +3,7 @@ layout: page
 title: About
 permalink: /about/
 cover_photo: about.jpg
+group: navigation
 ---
 
 Through college and for all of my career I've worked at the intersection of information and technology. When I realized the ability to create great websites with painless UX was completely in my hands, I seized the opportunity to build those experiences every day and left newspapers.
