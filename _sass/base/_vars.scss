@@ -37,6 +37,11 @@ $post-feature-meta-color: $white;
 $post-feature-title-color: $white;
 $post-feature-title-color-hover: $gray-blue;
 
+$form-input-bg-color: $light-gray;
+$form-input-focus-border: $light-blue;
+
+$button-bg-color: $light-blue;
+$button-bg-color-hover: $light-gray;
 
 //
 // Fonts
@@ -88,6 +93,12 @@ $blockquote-font-style: italic;
 $post-meta-font-size: 14px;
 $post-meta-font-style: italic;
 
+$form-input-font-family: $merriweather;
+$form-input-font-size: $base-font-size;
+$form-input-font-color: $gray-blue;
+
+$button-font-color: $gray-blue;
+$button-font-weight: 700;
 
 //
 // Margins, Spacing and Dimensions

@@ -5,14 +5,16 @@ permalink: /contact/
 group: navigation
 ---
 
-This is the contact page.
 
 <form action="https://formspree.io/nickswit@gmail.com" method="POST">
-    <input type="text" name="name">
-    <input type="email" name="_replyto">
-    <input type="textarea" name="message">
-    <input type="hidden" name="_next" value="//nick-switzer.com/thanks.html" />
+	<label for="name">Full Name</label>
+    <input type="text" id="name" name="name">
+    <label for="Email">Email</label>
+    <input type="email" id="email" name="_replyto">
+    <label for="message">Message</label>
+    <textarea id="message" name="message"></textarea>
+    <input type="hidden" name="_next" value="//www.nick-switzer.com/thanks.html" />
     <input type="hidden" name="_subject" value="Form Submission from nick-switzer.com" />
     <input type="text" name="_gotcha" style="display:none" />
-    <input type="submit" value="Send">
+    <input type="submit" value="Submit">
 </form>
