@@ -51,3 +51,19 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+// Buttons
+@mixin button {
+    background-color: $button-bg-color;
+    color: $button-font-color;
+    font-weight: $button-font-weight;
+    cursor: pointer;
+    padding: $spacing-unit/4 $spacing-unit/2;
+    @include fade;
+
+    &:hover,
+    &:active {
+        background-color: $button-bg-color-hover;
+        @include fade;
+    }
+}

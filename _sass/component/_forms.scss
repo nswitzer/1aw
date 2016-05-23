@@ -36,17 +36,5 @@ textarea {
 }
 
 input[type="submit"] {
-	background-color: $button-bg-color;
-	color: $button-font-color;
-	font-weight: $button-font-weight;
-	cursor: pointer;
-	padding: $spacing-unit/4 $spacing-unit/2;
-	border-radius: 5px;
-	@include fade;
-
-	&:hover,
-	&:active {
-		background-color: $button-bg-color-hover;
-		@include fade;
-	}
+	@include button;
 }
