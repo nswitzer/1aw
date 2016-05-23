@@ -69,6 +69,13 @@
 			text-decoration: none;
 			color: $nav-font-color-hover;
 		}
+
+		&.home {
+
+			.front & {
+				color: $nav-font-color-hover;
+			}
+		}
 	}
 }
 
