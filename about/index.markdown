@@ -6,7 +6,7 @@ cover_photo: about.jpg
 group: navigation
 ---
 
-Hey! My name's Nick. I'm currently the Development Director at [Elevated Third](https://www.elevatedthird.com/). I spend my days at the office doing everything from scoping and estimating development projects to front end and theme development, with some technical project management for good measure. 
+Hey! My name's Nick. I'm currently the Development Director at <a href="https://www.elevatedthird.com/" target="_blank">Elevated Third</a>. I spend my days at the office doing everything from scoping and estimating development projects to front end and theme development, with some technical project management for good measure. 
 
 Through college and for all of my career I've worked at the intersection of information and technology. When I realized the ability to create great websites with painless UX was completely in my hands, I seized the opportunity to build those experiences every day and left newspapers.
 
