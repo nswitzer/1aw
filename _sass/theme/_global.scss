@@ -24,10 +24,15 @@ body {
 }
 
 a.site-title-text {
-	background: $site-title-bg-color;
+	background-color: $site-title-bg-color;
 	color: $site-title-font-color;
  	padding: 15px 30px;
  	display: inline-block;
+
+ 	&:hover,
+ 	&:active {
+ 		background-color: $site-title-bg-color-hover;
+ 	}
 }
 
 // Page Content
