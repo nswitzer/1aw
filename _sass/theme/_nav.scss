@@ -40,6 +40,13 @@
 					}
 				}
 			}
+
+			&.active {
+
+				a {
+					color: $nav-font-color-hover;
+				}
+			}
 		}
 	}
 
