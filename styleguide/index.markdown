@@ -4,10 +4,6 @@ title: Styleguide
 permalink: /sg/
 ---
 
-# This is an h1
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo diam orci, nec fringilla augue efficitur non. In quis viverra neque. Aenean sed ante eget magna mattis porta in et ante. Nunc nisl libero, hendrerit vitae nisl ac, accumsan bibendum metus. Integer et massa ante. Mauris iaculis mauris at tellus pellentesque imperdiet. Quisque ultrices consectetur purus sit amet fringilla. Vivamus nec metus ut eros varius luctus. Sed ipsum purus, commodo eget nunc et, gravida gravida elit. Nunc tempus ex a odio aliquet consequat. Mauris scelerisque ut lorem quis posuere. Etiam rhoncus non turpis id porttitor.
-
 ## This is an h2
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo diam orci, nec fringilla augue efficitur non. In quis viverra neque. Aenean sed ante eget magna mattis porta in et ante. Nunc nisl libero, hendrerit vitae nisl ac, accumsan bibendum metus. Integer et massa ante. Mauris iaculis mauris at tellus pellentesque imperdiet. Quisque ultrices consectetur purus sit amet fringilla. Vivamus nec metus ut eros varius luctus. Sed ipsum purus, commodo eget nunc et, gravida gravida elit. Nunc tempus ex a odio aliquet consequat. Mauris scelerisque ut lorem quis posuere. Etiam rhoncus non turpis id porttitor.
