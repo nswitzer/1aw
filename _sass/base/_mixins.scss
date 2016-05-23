@@ -1,22 +1,9 @@
-/**
- * Mixin Definitions
- */
+//
+// Mixin Definitions
+//
 
-// Jekyll Defaults - @TODO: Replace
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-// @mixin media-query($device) {
-//     @media screen and (max-width: $device) {
-//         @content;
-//     }
-// }
 
-// Way better MQ mixin
+// Media Queries
 @mixin bp($size, $default: false, $direction: 'min-width') {
     @if ($direction == 'max-width') {
         $size: $size - 1;
