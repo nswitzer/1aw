@@ -9,13 +9,11 @@
 title: Nick Switzer
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Nick Switzer is a web developer based in Denver, Colorado.
+  He specializes in front end development, site architecture 
+  and Drupal themeing.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://www.nick-switzer.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
