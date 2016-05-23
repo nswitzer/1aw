@@ -2,6 +2,11 @@
  * Global Theme Styles
  */
 
+
+//
+// Global Elements
+//
+
 body {
 	background: $body-bg-color;
 }
@@ -79,4 +84,18 @@ a[href*="facebook"] {
 	&:before {
 	    content: '\e904';
 	}	
+}
+
+
+//
+// Global Content Elements
+//
+
+// Blockquotes
+blockquote {
+	font-size: $blockquote-font-size;
+	font-style: $blockquote-font-style;
+	font-weight: $blockquote-font-weight;
+	margin: 0 $spacing-unit*3 $spacing-unit;
+	text-align: center;
 }

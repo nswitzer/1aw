@@ -36,7 +36,7 @@ h1.page-title {
     }
 
     ul, ol {
-        margin-left: $spacing-unit;
+        margin: 0 $spacing-unit $spacing-unit;
     }
 
     li {
@@ -46,7 +46,7 @@ h1.page-title {
         }
     }
 
-    h2, h3, h4, h5, h6, blockquote, pre, ul, ol, dl, figure, %vertical-rhythm {
+    h2, h3, h4, h5, h6, pre, dl, figure, %vertical-rhythm {
         margin-bottom: $spacing-unit / 2;
     }
 
@@ -56,6 +56,10 @@ h1.page-title {
         &:last-child {
             margin-bottom: 0;
         }
+    }
+
+    .highlight {
+        margin-bottom: $spacing-unit;
     }
 }
 
