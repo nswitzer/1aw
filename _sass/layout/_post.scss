@@ -3,7 +3,7 @@
 //
 
 
-// Post Overview Page
+// GLobal Post Styles
 .post-content {
     margin: 0 $spacing-unit/2 $spacing-unit $spacing-unit/2;
     
@@ -25,9 +25,10 @@
     }
 
     .post-meta {
+    	margin-bottom: $spacing-unit/2;
 
-    	&.has-summary {
-    		margin-bottom: $spacing-unit/2;
+    	&.no-summary {
+    		margin-bottom: 0;
     	}
     }
 
@@ -57,4 +58,9 @@
     .highlight {
         margin-bottom: $spacing-unit;
     }
+}
+
+// Post Detail Page
+h1.post-title {
+	margin-bottom: $spacing-unit/2;
 }

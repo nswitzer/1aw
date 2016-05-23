@@ -14,10 +14,10 @@ title: 1aW
     	</div>
 	</div>
 	{% endif %}
-	
+
  	<div class="wrapper padded">
  		<h2 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
- 		<div class="post-meta{% if post.summary %} has-summary{% endif %}">{{ post.date | date: "%b %-d, %Y" }}</div>
+ 		<div class="post-meta{% unless post.summary %} no-summary{% endunless %}">{{ post.date | date: "%b %-d, %Y" }}</div>
  		{% if post.summary %}
  		<div class="post-summary">
  			{{ post.summary }}
