@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+    {% include head.html %}
+
+    <body {% if page.front == true %} class="front" {% endif %}>
+    <div id="preloader"></div>
+    <div class="page-wrapper">
+        {% include header.html %}
+
+        {{ content }}
+
+        {% include footer.html %}
+    </div>
+
+    <script src="{{"/js/nav.js" | prepend: site.baseurl }}"></script>
+    </body>
+
+</html>

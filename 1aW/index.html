@@ -1,16 +1,28 @@
 ---
-layout: page
+layout: post-list
 title: 1aW
 ---
 
-<ul class="post-list">
-  {% for post in site.posts %}
-    <li>
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+{% for post in site.posts %}
 
-      <h2>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h2>
-    </li>
-  {% endfor %}
-</ul>
+<div class="post-content{% if post.feature == true %} feature{% endif %}">
+
+	{% if post.cover_photo %}
+	<div class="cover-photo">
+    	<div class="wrapper">
+        	<img src="/assets/cover-photos/{{post.cover_photo}}" />
+    	</div>
+	</div>
+	{% endif %}
+	
+ 	<div class="wrapper padded">
+ 		<h2 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+ 		<div class="post-meta{% if post.summary %} has-summary{% endif %}">{{ post.date | date: "%b %-d, %Y" }}</div>
+ 		{% if post.summary %}
+ 		<div class="post-summary">
+ 			{{ post.summary }}
+ 		</div>
+ 		{% endif %}
+ 	</div>
+</div>
+{% endfor %}

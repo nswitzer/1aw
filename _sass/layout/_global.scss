@@ -31,8 +31,11 @@ h1.page-title {
     }
 
     .wrapper {
-        padding-top: $spacing-unit;
-        padding-bottom: $spacing-unit;
+
+        &.padded {
+            padding-top: $spacing-unit;
+            padding-bottom: $spacing-unit;            
+        }
     }
 
     ul, ol {

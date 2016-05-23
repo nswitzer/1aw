@@ -1,0 +1,60 @@
+//
+// Post Layout Styles
+//
+
+
+// Post Overview Page
+.post-content {
+    margin: 0 $spacing-unit/2 $spacing-unit $spacing-unit/2;
+    
+    @include bp($large) {
+        margin: 0 0 $spacing-unit 0;
+    }
+
+    .wrapper {
+        
+        &.padded {
+        	padding-top: $spacing-unit;
+        	padding-bottom: $spacing-unit;
+        }
+    }
+
+    .post-title,
+    .post-meta {
+    	text-align: center;
+    }
+
+    .post-meta {
+
+    	&.has-summary {
+    		margin-bottom: $spacing-unit/2;
+    	}
+    }
+
+    ul, ol {
+        margin: 0 $spacing-unit $spacing-unit;
+    }
+
+    li {
+        > ul,
+        > ol {
+            margin-bottom: 0;
+        }
+    }
+
+    h2, h3, h4, h5, h6, pre, dl, figure, %vertical-rhythm {
+        margin-bottom: $spacing-unit / 2;
+    }
+
+    p {
+        margin-bottom: $spacing-unit;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .highlight {
+        margin-bottom: $spacing-unit;
+    }
+}
