@@ -3,7 +3,7 @@
 //  */
 
 .site-nav {
-	background-color: darken($gray-blue, 5%);
+	background-color: $site-header-bg-color;
 	font-family: $nav-font-family;
 	font-size: $nav-font-size;
 	font-weight: $nav-font-weight;

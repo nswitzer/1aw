@@ -8,7 +8,11 @@
 //
 
 body {
-	background: $body-bg-color;
+	background-color: $body-bg-color;
+}
+
+.page-wrapper {
+	background-color: $page-wrapper-bg-color;
 }
 
 // Site Title
@@ -86,6 +90,10 @@ a[href*="facebook"] {
 	}	
 }
 
+// Footer
+.site-footer {
+	background-color: $site-footer-bg-color;
+}
 
 //
 // Global Content Elements

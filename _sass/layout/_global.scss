@@ -24,10 +24,10 @@ h1.page-title {
 
 // Page Content
 .page-content {
-    margin: 0 $spacing-unit/2 $spacing-unit $spacing-unit/2;
+    padding: 0 $spacing-unit/2 $spacing-unit $spacing-unit/2;
     
     @include bp($large) {
-        margin: 0 0 $spacing-unit 0;
+        padding: 0 0 $spacing-unit 0;
     }
 
     .wrapper {
@@ -86,6 +86,5 @@ h1.page-title {
 
 // Footer
 .site-footer {
-    background-color: darken($gray-blue, 5%);
     padding: $spacing-unit 0;
 }

@@ -12,11 +12,15 @@ $light-gray: #d7dadb;
 $light-blue: #6dbcdb;
 $white: #ffffff;
 
-
-// Sitewide Color Definitions
-$body-bg-color: $gray-blue;
-
 // Element Color Definitions
+$body-bg-color: darken($gray-blue, 5%);
+
+$page-wrapper-bg-color: $gray-blue;
+
+$site-header-bg-color: darken($gray-blue, 5%);
+
+$site-footer-bg-color: darken($gray-blue, 5%);
+
 $preloader-bg-color: $white;
 
 $site-title-bg-color: $red;
