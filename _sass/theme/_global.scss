@@ -59,41 +59,44 @@ ul.social {
 			@include icofont(20px);
 		}
 	}
-}
-a[href*="linkedin"] {
 
-	&:before {
-	    content: '\e907';
-	}	
-}
+	a[href*="linkedin"] {
 
-a[href*="drupal"] {
+		&:before {
+	    	content: '\e907';
+		}	
+	}
+
+	a[href*="drupal"] {
 	
-	&:before {
-	    content: '\e903';
-	}	
+		&:before {
+	    	content: '\e903';
+		}	
+	}
+
+	a[href*="github"] {
+	
+		&:before {
+	    	content: '\e906';
+		}	
+	}
+
+	a[href*="twitter"] {
+	
+		&:before {
+	    	content: '\e905';
+		}	
+	}
+
+	a[href*="facebook"] {
+	
+		&:before {
+	    	content: '\e904';
+		
+		}
+	}
 }
 
-a[href*="github"] {
-	
-	&:before {
-	    content: '\e906';
-	}	
-}
-
-a[href*="twitter"] {
-	
-	&:before {
-	    content: '\e905';
-	}	
-}
-
-a[href*="facebook"] {
-	
-	&:before {
-	    content: '\e904';
-	}	
-}
 
 // Footer
 .site-footer {
