@@ -1,6 +1,6 @@
 (function($) {
 	var nav = responsiveNav(".site-nav", {
-    	insert: "after",
+    	insert: "before",
     	navClass: "site-nav"
   	});
 })(jQuery);
