@@ -24,6 +24,7 @@ group: navigation
  			{{ post.summary }}
  		</div>
  		{% endif %}
+ 		<p><a href="{{ post.url | prepend: site.baseurl }}">Read More</a></p>
  	</div>
 </div>
 {% endfor %}
