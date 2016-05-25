@@ -18,7 +18,7 @@ group: navigation
 
  	<div class="wrapper padded">
  		<h2 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
- 		<div class="post-meta{% unless post.summary %} no-summary{% endunless %}"><span>{{ post.date | date: "%b %-d, %Y" }}</span>{% if post.categories %} • <span>Tagged with {{ post.categories | join '|' }}</span>{% endif %}</div>
+ 		<div class="post-meta{% unless post.summary %} no-summary{% endunless %}"><span>{{ post.date | date: "%b %-d, %Y" }}</span></div>
  		{% if post.summary %}
  		<div class="post-summary">
  			{{ post.summary }}
