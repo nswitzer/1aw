@@ -1,0 +1,40 @@
+//
+// Form Styles
+//
+
+
+input,
+textarea {
+	font-family: $form-input-font-family;
+	font-size: $form-input-font-size;
+	color: $form-input-font-color;
+	background-color: $form-input-bg-color;
+	border: 0;
+	display: block;
+	padding: $spacing-unit/4;
+	resize: none;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+	width: 100%;
+	margin: 0 0 $spacing-unit/2 0;
+
+	@include bp($large) {
+		width: 75%;
+	}
+
+	&:focus {
+		outline: none;
+		border-left: 5px solid $form-input-focus-border;
+	}
+}
+
+textarea {
+	height: 150px;
+}
+
+input[type="submit"] {
+	@include button;
+}

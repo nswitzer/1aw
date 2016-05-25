@@ -19,22 +19,10 @@
     <div class="page-wrapper">
         {% include header.html %}
 
-        {% if page.cover_photo %}
-        <div class="cover-photo">
-            <div class="wrapper">
-                <img src="/assets/cover-photos/{{page.cover_photo}}" />
-            </div>
-        </div>
-        {% endif %}
+        {{ content }}
 
-        <div class="page-content">
-            <div class="wrapper padded">
-                {{ content }}
-            </div>
-        </div>
-
+        {% include footer.html %}
     </div>
-    {% include footer.html %}
 
     <script src="{{"/js/nav.js" | prepend: site.baseurl }}"></script>
     </body>

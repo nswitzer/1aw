@@ -1,0 +1,140 @@
+//
+// Main Navigation Styles
+//
+
+
+.site-nav {
+	background-color: $site-header-bg-color;
+	font-family: $nav-font-family;
+	font-size: $nav-font-size;
+	font-weight: $nav-font-weight;
+	text-transform: uppercase;
+	@include clearfix;
+
+	@include bp($small) {
+		padding: $spacing-unit/2 0;
+		text-align: center;
+	}
+
+	@include bp($large) {
+		text-align: left;
+	}
+
+	ul {
+		background-color: lighten($gray-blue, 5%);
+
+		@include bp($small) {
+			display: inline-block;
+			background-color: transparent;
+		}
+
+		li {
+			@include bp($small) {
+				float: left;
+				list-style: none;
+				margin-right: $spacing-unit/2;
+
+				&:last-child {
+
+					a {
+						border-right: 0;
+					}
+				}
+			}
+
+			&.active {
+
+				a {
+					color: $nav-font-color-hover;
+				}
+			}
+		}
+	}
+
+	a {
+		color: $nav-font-color;
+		display: block;
+		line-height: 1;
+		padding: $spacing-unit/2;
+		border-bottom: 2px solid darken($gray-blue, 5%);
+
+		@include bp($small) {
+			padding: 0 $spacing-unit/2 0 0;
+			border-bottom: 0;
+			border-right: 2px solid $gray-blue;
+		}
+
+		&:hover,
+		&:active {
+			text-decoration: none;
+			color: $nav-font-color-hover;
+		}
+
+		&.home {
+
+			.front & {
+				color: $nav-font-color-hover;
+			}
+		}
+	}
+}
+
+// Responsive Menu Trigger
+.nav-toggle {
+	display: block;
+	background-color: darken($gray-blue, 5%);
+	padding: $spacing-unit/2;
+	text-transform: uppercase;
+	font-family: $nav-font-family;
+	font-size: $nav-font-size;
+	font-weight: $nav-font-weight;
+	color: $nav-font-color;
+
+	&:hover,
+	&:active {
+		color: $nav-font-color-hover;
+	}
+
+	&:before {
+		@include icofont;
+	    content: '\e901';
+	    margin-right: 5px;
+	}
+}
+
+/*! responsive-nav.js 1.0.39 by @viljamis */
+
+.js .site-nav {
+	clip: rect(0 0 0 0);
+	max-height: 0;
+	position: absolute;
+	display: block;
+	overflow: hidden;
+	zoom: 1;
+}
+
+.site-nav.opened {
+	max-height: 9999px;
+}
+
+.nav-toggle {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+@include bp($small) {
+	.js .site-nav {
+    	position: relative;
+  	}
+  	.js .site-nav.closed {
+    	max-height: none;
+  	}
+  	.nav-toggle {
+    	display: none;
+  	}	
+}

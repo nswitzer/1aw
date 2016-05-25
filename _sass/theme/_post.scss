@@ -1,0 +1,52 @@
+//
+// Post Theme Styles
+//
+
+
+// Sitewide Post Styles
+.post-content {
+
+	.wrapper {
+		background-color: $post-content-bg-color;
+	}
+}
+
+.post-title {
+
+	a {
+		color: $post-title-color;
+
+		&:hover,
+		&:active {
+			color: $post-title-color-hover;
+		}
+	}
+}
+
+.post-meta {
+	font-size: $post-meta-font-size;
+	font-style: $post-meta-font-style;
+}
+
+.feature {
+
+	.wrapper {
+		background-color: $post-feature-bg-color;
+	}
+
+	.post-meta {
+		color: $post-feature-meta-color;
+	}
+
+	.post-title {
+
+		a {
+			color: $post-feature-title-color;
+
+			&:hover,
+			&:active {
+				color: $post-feature-title-color-hover;
+			}
+		}
+	}
+}

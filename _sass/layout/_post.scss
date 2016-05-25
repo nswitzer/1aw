@@ -1,0 +1,70 @@
+//
+// Post Layout Styles
+//
+
+
+// GLobal Post Styles
+.post-content {
+    margin: 0 $spacing-unit/2 $spacing-unit $spacing-unit/2;
+    
+    @include bp($large) {
+        margin: 0 0 $spacing-unit 0;
+    }
+
+    .wrapper {
+        
+        &.padded {
+        	padding-top: $spacing-unit;
+        	padding-bottom: $spacing-unit;
+        }
+    }
+
+    .cover-photo {
+        margin: 0;
+    }
+
+    .post-title,
+    .post-meta {
+    	text-align: center;
+    }
+
+    .post-meta {
+    	margin-bottom: $spacing-unit/2;
+
+    	&.no-summary {
+    		margin-bottom: 0;
+    	}
+    }
+
+    ul, ol {
+        margin: 0 $spacing-unit $spacing-unit;
+    }
+
+    li {
+        > ul,
+        > ol {
+            margin-bottom: 0;
+        }
+    }
+
+    h2, h3, h4, h5, h6, pre, dl, figure, %vertical-rhythm {
+        margin-bottom: $spacing-unit / 2;
+    }
+
+    p {
+        margin-bottom: $spacing-unit;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .highlight {
+        margin-bottom: $spacing-unit;
+    }
+}
+
+// Post Detail Page
+h1.post-title {
+	margin-bottom: $spacing-unit/2;
+}

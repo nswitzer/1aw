@@ -1,0 +1,69 @@
+//
+// Mixin Definitions
+//
+
+
+// Media Queries
+@mixin bp($size, $default: false, $direction: 'min-width') {
+    @if ($direction == 'max-width') {
+        $size: $size - 1;
+    }
+
+    @media (#{$direction}: #{$size}) {
+        @content;
+    }
+
+    @if ($default) {
+        .no-mediaqueries & {
+            @content;
+        }
+    }
+}
+
+// Clearfix
+@mixin clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+// Simple Fade
+@mixin fade($length: .25s) {
+    -o-transition: $length;
+    ms-transition: $length;
+    moz-transition: $length;
+    webkit-transition: $length;
+    transition: $length;
+}
+
+// Icon Font Setup
+@mixin icofont($size: 16px) {
+    font-family: $icomoon;
+    font-size: $size;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+// Buttons
+@mixin button {
+    background-color: $button-bg-color;
+    color: $button-font-color;
+    font-weight: $button-font-weight;
+    cursor: pointer;
+    padding: $spacing-unit/4 $spacing-unit/2;
+    @include fade;
+
+    &:hover,
+    &:active {
+        background-color: $button-bg-color-hover;
+        @include fade;
+    }
+}

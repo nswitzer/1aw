@@ -1,0 +1,30 @@
+---
+layout: post-list
+title: Weekly
+group: navigation
+---
+
+{% for post in site.posts %}
+
+<div class="post-content{% if post.feature == true %} feature{% endif %}">
+
+	{% if post.cover_photo %}
+	<div class="cover-photo">
+    	<div class="wrapper">
+        	<img src="/assets/cover-photos/{{post.cover_photo}}" />
+    	</div>
+	</div>
+	{% endif %}
+
+ 	<div class="wrapper padded">
+ 		<h2 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+ 		<div class="post-meta{% unless post.summary %} no-summary{% endunless %}"><span>{{ post.date | date: "%b %-d, %Y" }}</span></div>
+ 		{% if post.summary %}
+ 		<div class="post-summary">
+ 			{{ post.summary }}
+ 		</div>
+ 		{% endif %}
+ 		<p><a href="{{ post.url | prepend: site.baseurl }}">Read More</a></p>
+ 	</div>
+</div>
+{% endfor %}

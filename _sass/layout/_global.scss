@@ -1,0 +1,90 @@
+//
+// Global Layout Styles
+//
+
+
+// Site Title
+.site-title {
+    margin: $spacing-unit 0;
+
+    @include bp($small) {
+        margin: $spacing-unit*2 0;        
+    }
+}
+
+// Page Title
+h1.page-title {
+    margin-bottom: $spacing-unit/2;
+}
+
+// Cover Photos
+.cover-photo {
+    margin: 0 $spacing-unit/2;
+}
+
+// Page Content
+.page-content {
+    padding: 0 $spacing-unit/2 $spacing-unit $spacing-unit/2;
+    
+    @include bp($large) {
+        padding: 0 0 $spacing-unit 0;
+    }
+
+    .wrapper {
+
+        &.padded {
+            padding-top: $spacing-unit;
+            padding-bottom: $spacing-unit;            
+        }
+    }
+
+    ul, ol {
+        margin: 0 $spacing-unit $spacing-unit;
+    }
+
+    li {
+        > ul,
+        > ol {
+            margin-bottom: 0;
+        }
+    }
+
+    h2, h3, h4, h5, h6, pre, dl, figure, %vertical-rhythm {
+        margin-bottom: $spacing-unit / 2;
+    }
+
+    p {
+        margin-bottom: $spacing-unit;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .highlight {
+        margin-bottom: $spacing-unit;
+    }
+}
+
+ // Wrapper
+.wrapper {
+	max-width: $content-width;
+	margin-right: auto;
+	margin-left: auto;
+    @include clearfix;
+
+    &.padded {
+    	padding-right: $spacing-unit / 2;
+    	padding-left: $spacing-unit / 2;
+
+    	@include bp($small) {
+		    padding-right: $spacing-unit;
+		    padding-left: $spacing-unit;
+    	}
+    }
+}
+
+// Footer
+.site-footer {
+    padding: $spacing-unit 0;
+}

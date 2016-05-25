@@ -1,0 +1,117 @@
+//
+// Global Theme Styles
+//
+
+
+//
+// Global Elements
+//
+
+body {
+	background-color: $body-bg-color;
+}
+
+.page-wrapper {
+	background-color: $page-wrapper-bg-color;
+}
+
+// Site Title
+.site-title {
+	font-family: $site-title-font-family;
+	font-size: $site-title-font-size;
+	font-weight: $site-title-font-weight;
+	text-align: center;
+}
+
+a.site-title-text {
+	background-color: $site-title-bg-color;
+	color: $site-title-font-color;
+ 	padding: 15px 30px;
+ 	display: inline-block;
+
+ 	&:hover,
+ 	&:active {
+ 		background-color: $site-title-bg-color-hover;
+ 	}
+}
+
+// Page Content
+.page-content {
+
+	.wrapper {
+ 		background-color: $page-content-bg-color;
+ 	}
+}
+
+// Social Icons
+ul.social {
+	text-align: center;
+
+	li {
+		display: inline;
+		margin: 0 $spacing-unit/4;
+	}
+
+	a {
+		font-size: 0;
+
+		&:before {
+			@include icofont(20px);
+		}
+	}
+
+	a[href*="linkedin"] {
+
+		&:before {
+	    	content: '\e907';
+		}	
+	}
+
+	a[href*="drupal"] {
+	
+		&:before {
+	    	content: '\e903';
+		}	
+	}
+
+	a[href*="github"] {
+	
+		&:before {
+	    	content: '\e906';
+		}	
+	}
+
+	a[href*="twitter"] {
+	
+		&:before {
+	    	content: '\e905';
+		}	
+	}
+
+	a[href*="facebook"] {
+	
+		&:before {
+	    	content: '\e904';
+		
+		}
+	}
+}
+
+
+// Footer
+.site-footer {
+	background-color: $site-footer-bg-color;
+}
+
+//
+// Global Content Elements
+//
+
+// Blockquotes
+blockquote {
+	font-size: $blockquote-font-size;
+	font-style: $blockquote-font-style;
+	font-weight: $blockquote-font-weight;
+	margin: 0 $spacing-unit*3 $spacing-unit;
+	text-align: center;
+}
