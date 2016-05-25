@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Here We go!"
+date:   2016-05-24 19:00:00 -0600
+cover_photo: here-we-go.jpg
+summary: I'm not trying to rack up pageviews, build a following or monetize anything. My goal is simple - to explore new technologies and spend some time writing about them. Once a week.
+---
+Well, I'm finally live. It's been quite a while in the making, but I've been promising myself for too long that I would put together an outlet for my desires to explore more new technology and spend more time writing. I'm not trying to rack up pageviews, build a following or monetize anything. My goal is simple - to explore new technologies and spend some time writing about them. Once a week. That will be a challenge, but I think I'm for it. My brain could definitely use the exercise.
+
+The project begins with the build of this website. I've been wanting to check out Jekyll for some time now and this seemed like the perfect opportunity. I love the idea of a site that is simple to deploy, easy to optimize and maintained entirely in a git repo. In the coming weeks, I'll be writing about specific features of Jekyll I've enjoyed using, as well as some helpful tools I've used to make this thing a reality.
+
+On top of weekly entries, I'll be continuing to improve this site. It's obviously pretty bare bones right now, but, hey, M.V.P, am I right? All of my code is available as a public repo on Github - [check it out][site-repo]! Features additions, updates and bugs I'm tracking will all be maintained using Github issues. Submit an issue if you find something wrong - I always appreciate feedback.
+
+[site-repo]: https://github.com/nswitzer/1aw
