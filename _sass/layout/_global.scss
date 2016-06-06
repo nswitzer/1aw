@@ -84,7 +84,13 @@ h1.page-title {
     }
 }
 
+// Social Icons
+ul.social {
+    margin: 0 0 $spacing-unit/2 0;
+}
+
 // Footer
 .site-footer {
     padding: $spacing-unit 0;
+    text-align: center;
 }
