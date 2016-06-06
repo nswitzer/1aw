@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "Editorial Semantic Versioning"
+date:   2016-06-05 19:00:00 -0600
+meta_desc: Editorial Semantic Versioning proposes a solution to the problem of releasing versioned content managed in a Git repo.
+summary: This project is the first time I've used a tool like Jekyll, where my entire site lives in the Git repo - including content. I love it so far, but it poses an interesting problem of how to manage version numbers when posts are committed just the same as features and hot fixes. I'm calling my solution to this problem Editorial Semantic Versioning.
+---
+This project is the first time I've used a tool like Jekyll, where my entire site lives in the Git repo - including content. I love it so far, but it poses an interesting problem of how to manage version numbers when posts are committed just the same as features and hot fixes. I'm calling my solution to this problem Editorial Semantic Versioning.
+
+Before I dig too much into the why, let me quickly cover the how. My convention for release numbers (tags in the git repo) uses the following pattern: [major release].[feature release].[hot fix].[post]. The site is currently on version 1.1.0.1. What that means is there's been one major release, one feature release and one post (you're looking at it - my initial post counts as 0).
+
+I'm a big fan of both [Semantic Versioning](http://semver.org/) and [Git Flow](http://nvie.com/posts/a-successful-git-branching-model/) and this idea is heavily influenced by both. Essentially what I'm talking about is just Semantic Versioning with an additional release number tacked on to the end that increments as posts are added to the repo. I debated for quite a while about using either features or hotfixes for posts, but both have intentions that are much different than that of releasing new content to production. Feature releases are intended to be used for adding new functional pieces to the site, and hotfixes are meant to quickly address an undesirable issue on the live site (like application of a security update or a fix for an IE bug). Hence the final number in my convention - this is strictly reserved for releasing new editorial content into the master branch. If a typo or editorial mistake needs to be fixed, that should be addressed with a hotfix because those are really no different than any other production bug that needs to be immediately addressed and released.
+
+My site is obviously a small, one-man operation, but I think this could make for a nice, git-based editorial workflow if, for some weird reason, there was a need for that. Thinking in Github terms, your editor/publisher role owns the repo and controls merging pull requests. Content contributors would be the ones forking the main repo, creating a post branch using Editorial Semantic Versioning conventions (e.g. post/1.1.0.1) and submitting a pull request back to the editor/publisher. The editor/publisher will then review the pull request (edit the article) and choose to either merge into the main repo, thereby publishing the post, or refuse the pull request and provide feedback for how the article needs to change.
+
+This website is the first time I've really tested the idea out, so I'll be sure to post any updates about weird situations that come up and how I address them. 
